@@ -6,7 +6,10 @@ namespace CargoShipGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Ship myCargoShip = new Ship();
+            myCargoShip.CycleCount = 8;
+            myCargoShip.TrainCarCount = 3;
+            Console.WriteLine($"This ship is {myCargoShip.ToString()}");
         }
     }
 }
